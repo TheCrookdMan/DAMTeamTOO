@@ -95,6 +95,10 @@
     <Compile Include="Migrations\201811122130072_LinkMetaAndField.Designer.cs">
       <DependentUpon>201811122130072_LinkMetaAndField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811182316429_PopulateDatabase.cs" />
+    <Compile Include="Migrations\201811182316429_PopulateDatabase.Designer.cs">
+      <DependentUpon>201811182316429_PopulateDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -121,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811122130072_LinkMetaAndField.resx">
       <DependentUpon>201811122130072_LinkMetaAndField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811182316429_PopulateDatabase.resx">
+      <DependentUpon>201811182316429_PopulateDatabase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

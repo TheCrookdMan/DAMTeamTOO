@@ -3,3 +3,7 @@
 ################################################################################
 
 /Dam/.vs/Dam/v15/Server/sqlite3/db.lock
+/.vs
+/Dam/.vs/Dam/v15/Server/sqlite3
+/Dam/Dam/obj/Debug
+/Dam/Dam/bin/Debug
