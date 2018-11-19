@@ -1,9 +1,8 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-
-/Dam/.vs/Dam/v15/Server/sqlite3/db.lock
 /.vs
-/Dam/.vs/Dam/v15/Server/sqlite3
-/Dam/Dam/obj/Debug
-/Dam/Dam/bin/Debug
+/Dam/.vs
+/Dam/Dam/obj
+/Dam/Dam/bin
+/Dam/packages
