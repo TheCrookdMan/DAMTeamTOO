@@ -7,13 +7,13 @@ namespace Dam.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class PopulateDatabase : IMigrationMetadata
+    public sealed partial class AddAdminPassword : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddAdminPassword));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811182316429_PopulateDatabase"; }
+            get { return "201811192103095_AddAdminPassword"; }
         }
         
         string IMigrationMetadata.Source

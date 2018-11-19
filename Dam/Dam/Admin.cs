@@ -10,6 +10,7 @@ namespace Dam
     {
         public int ID { get; set; }
         public string AdminName { get; set; }
+        public string AdminPassword { get; set; }
         public string Position { get; set; }
         public DateTime DOB { get; set; }
         public string PhoneNo { get; set; }

@@ -95,9 +95,13 @@
     <Compile Include="Migrations\201811122130072_LinkMetaAndField.Designer.cs">
       <DependentUpon>201811122130072_LinkMetaAndField.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811182316429_PopulateDatabase.cs" />
-    <Compile Include="Migrations\201811182316429_PopulateDatabase.Designer.cs">
-      <DependentUpon>201811182316429_PopulateDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201811192103095_AddAdminPassword.cs" />
+    <Compile Include="Migrations\201811192103095_AddAdminPassword.Designer.cs">
+      <DependentUpon>201811192103095_AddAdminPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811192103374_PopulateAdminsWithPW.cs" />
+    <Compile Include="Migrations\201811192103374_PopulateAdminsWithPW.Designer.cs">
+      <DependentUpon>201811192103374_PopulateAdminsWithPW.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -126,8 +130,11 @@
     <EmbeddedResource Include="Migrations\201811122130072_LinkMetaAndField.resx">
       <DependentUpon>201811122130072_LinkMetaAndField.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811182316429_PopulateDatabase.resx">
-      <DependentUpon>201811182316429_PopulateDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201811192103095_AddAdminPassword.resx">
+      <DependentUpon>201811192103095_AddAdminPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811192103374_PopulateAdminsWithPW.resx">
+      <DependentUpon>201811192103374_PopulateAdminsWithPW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
