@@ -39,5 +39,10 @@ namespace Dam
                 Application.Exit();
 
             }
+
+        private void btnAddAsset_Click(object sender, EventArgs e)
+        {
+
         }
+    }
 }
