@@ -351,6 +351,7 @@ namespace Dam
             this.btnBackup.TabIndex = 8;
             this.btnBackup.Text = "Backup";
             this.btnBackup.UseVisualStyleBackColor = true;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // tbKeyword
             // 
