@@ -329,6 +329,7 @@ namespace Dam
             this.btnDeleteAsset.TabIndex = 6;
             this.btnDeleteAsset.Text = "Delete Asset";
             this.btnDeleteAsset.UseVisualStyleBackColor = true;
+            this.btnDeleteAsset.Click += new System.EventHandler(this.btnDeleteAsset_Click);
             // 
             // btnOptions
             // 
@@ -350,6 +351,7 @@ namespace Dam
             this.btnBackup.TabIndex = 8;
             this.btnBackup.Text = "Backup";
             this.btnBackup.UseVisualStyleBackColor = true;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // tbKeyword
             // 
