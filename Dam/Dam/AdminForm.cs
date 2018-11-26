@@ -45,5 +45,11 @@ namespace Dam
             Logs newlog = new Logs();
             newlog.Show();
         }
+
+        private void btnEditLogin_Click(object sender, EventArgs e)
+        {
+            LoginEdit editlog = new LoginEdit();
+            editlog.Show();
+        }
     }
 }
