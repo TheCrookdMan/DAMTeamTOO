@@ -329,6 +329,7 @@ namespace Dam
             this.btnDeleteAsset.TabIndex = 6;
             this.btnDeleteAsset.Text = "Delete Asset";
             this.btnDeleteAsset.UseVisualStyleBackColor = true;
+            this.btnDeleteAsset.Click += new System.EventHandler(this.btnDeleteAsset_Click);
             // 
             // btnOptions
             // 

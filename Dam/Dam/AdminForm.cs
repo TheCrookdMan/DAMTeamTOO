@@ -51,5 +51,28 @@ namespace Dam
             LoginEdit editlog = new LoginEdit();
             editlog.Show();
         }
+
+        private void btnDeleteAsset_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (LBAssetViewer.Items.Count >= 1)
+                {
+                    if (LBAssetViewer.SelectedValue != null)
+                    {
+                        string SAsset = LBAssetViewer.SelectedItem.ToString();
+                        LBAssetViewer.Items.Remove(SAsset);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cannot remove");
+                }
+            }
+            catch (Exception blop)
+            {
+
+            }
+        }
     }
 }
