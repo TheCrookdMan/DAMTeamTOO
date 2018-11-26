@@ -40,9 +40,10 @@ namespace Dam
 
             }
 
-        private void btnAddAsset_Click(object sender, EventArgs e)
+        private void btnOptions_Click(object sender, EventArgs e)
         {
-
+            Logs newlog = new Logs();
+            newlog.Show();
         }
     }
 }
