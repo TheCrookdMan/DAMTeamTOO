@@ -33,7 +33,6 @@
             this.editAdd = new System.Windows.Forms.Button();
             this.editDelete = new System.Windows.Forms.Button();
             this.editEdit = new System.Windows.Forms.Button();
-            this.btnEditLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LTitle
@@ -82,22 +81,11 @@
             this.editEdit.Text = "Edit";
             this.editEdit.UseVisualStyleBackColor = true;
             // 
-            // btnEditLogin
-            // 
-            this.btnEditLogin.Location = new System.Drawing.Point(299, 21);
-            this.btnEditLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEditLogin.Name = "btnEditLogin";
-            this.btnEditLogin.Size = new System.Drawing.Size(85, 46);
-            this.btnEditLogin.TabIndex = 6;
-            this.btnEditLogin.Text = "Return";
-            this.btnEditLogin.UseVisualStyleBackColor = true;
-            // 
             // LoginEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 332);
-            this.Controls.Add(this.btnEditLogin);
             this.Controls.Add(this.editEdit);
             this.Controls.Add(this.editDelete);
             this.Controls.Add(this.editAdd);
@@ -117,6 +105,5 @@
         private System.Windows.Forms.Button editAdd;
         private System.Windows.Forms.Button editDelete;
         private System.Windows.Forms.Button editEdit;
-        private System.Windows.Forms.Button btnEditLogin;
     }
 }
