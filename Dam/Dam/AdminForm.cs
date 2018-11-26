@@ -39,5 +39,11 @@ namespace Dam
                 Application.Exit();
 
             }
+
+        private void btnOptions_Click(object sender, EventArgs e)
+        {
+            Logs newlog = new Logs();
+            newlog.Show();
         }
+    }
 }
