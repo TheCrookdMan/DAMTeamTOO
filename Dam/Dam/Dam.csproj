@@ -66,6 +66,7 @@
     <Compile Include="DB.cs" />
     <Compile Include="Documents.cs" />
     <Compile Include="Field Mappings.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
