@@ -65,7 +65,7 @@
             // 
             this.LTitle.AutoSize = true;
             this.LTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTitle.Location = new System.Drawing.Point(105, 26);
+            this.LTitle.Location = new System.Drawing.Point(59, 15);
             this.LTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LTitle.Name = "LTitle";
             this.LTitle.Size = new System.Drawing.Size(408, 29);
