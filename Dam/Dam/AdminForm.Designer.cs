@@ -43,8 +43,8 @@ namespace Dam
             this.btnBackup = new System.Windows.Forms.Button();
             this.tbKeyword = new System.Windows.Forms.TextBox();
             this.LKeyword = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.filtersListBox = new System.Windows.Forms.CheckedListBox();
+            this.sortByBox = new System.Windows.Forms.ComboBox();
             this.GBFilters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,8 +92,8 @@ namespace Dam
             // 
             // GBFilters
             // 
-            this.GBFilters.Controls.Add(this.comboBox1);
-            this.GBFilters.Controls.Add(this.checkedListBox1);
+            this.GBFilters.Controls.Add(this.sortByBox);
+            this.GBFilters.Controls.Add(this.filtersListBox);
             this.GBFilters.Controls.Add(this.label1);
             this.GBFilters.Controls.Add(this.btnSearch);
             this.GBFilters.Location = new System.Drawing.Point(9, 116);
@@ -188,31 +188,32 @@ namespace Dam
             this.LKeyword.TabIndex = 16;
             this.LKeyword.Text = "Keyword :";
             // 
-            // checkedListBox1
+            // filtersListBox
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.filtersListBox.FormattingEnabled = true;
+            this.filtersListBox.Items.AddRange(new object[] {
             "Intake Form",
             "Birth Certificate",
             "Medical Form"});
-            this.checkedListBox1.Location = new System.Drawing.Point(5, 18);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(181, 79);
-            this.checkedListBox1.TabIndex = 23;
+            this.filtersListBox.Location = new System.Drawing.Point(5, 18);
+            this.filtersListBox.Name = "filtersListBox";
+            this.filtersListBox.Size = new System.Drawing.Size(181, 79);
+            this.filtersListBox.TabIndex = 23;
             // 
-            // comboBox1
+            // sortByBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.sortByBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sortByBox.FormattingEnabled = true;
+            this.sortByBox.Items.AddRange(new object[] {
             "A-Z (First Name)",
             "A-Z (Last Name)",
             "Z-A (First Name)",
             "Z-A (Last Name)",
             "ID"});
-            this.comboBox1.Location = new System.Drawing.Point(5, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 21);
-            this.comboBox1.TabIndex = 24;
+            this.sortByBox.Location = new System.Drawing.Point(5, 126);
+            this.sortByBox.Name = "sortByBox";
+            this.sortByBox.Size = new System.Drawing.Size(177, 21);
+            this.sortByBox.TabIndex = 24;
             // 
             // AdminForm
             // 
@@ -260,7 +261,7 @@ namespace Dam
         private System.Windows.Forms.Label LKeyword;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckedListBox filtersListBox;
+        private System.Windows.Forms.ComboBox sortByBox;
     }
 }
