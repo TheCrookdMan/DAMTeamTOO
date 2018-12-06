@@ -103,6 +103,7 @@
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(317, 20);
             this.tbPassword.TabIndex = 2;
+            this.tbPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnEnterLogin);
             // 
             // label2
             // 
@@ -119,6 +120,7 @@
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(317, 20);
             this.tbUsername.TabIndex = 1;
+            this.tbUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnEnterLogin);
             // 
             // label1
             // 
