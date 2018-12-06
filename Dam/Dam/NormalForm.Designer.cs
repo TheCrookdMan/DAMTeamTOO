@@ -34,10 +34,10 @@
             this.tbKeyword = new System.Windows.Forms.TextBox();
             this.LKeyword = new System.Windows.Forms.Label();
             this.GBFilters = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.GBFilters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             this.LBAssetViewer.FormattingEnabled = true;
             this.LBAssetViewer.Location = new System.Drawing.Point(218, 75);
-            this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(2);
+            this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LBAssetViewer.Name = "LBAssetViewer";
             this.LBAssetViewer.Size = new System.Drawing.Size(359, 277);
             this.LBAssetViewer.TabIndex = 12;
@@ -53,7 +53,7 @@
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(491, 10);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(85, 46);
             this.btnLogout.TabIndex = 11;
@@ -75,7 +75,7 @@
             // tbKeyword
             // 
             this.tbKeyword.Location = new System.Drawing.Point(64, 75);
-            this.tbKeyword.Margin = new System.Windows.Forms.Padding(2);
+            this.tbKeyword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbKeyword.Multiline = true;
             this.tbKeyword.Name = "tbKeyword";
             this.tbKeyword.Size = new System.Drawing.Size(138, 19);
@@ -98,45 +98,13 @@
             this.GBFilters.Controls.Add(this.label1);
             this.GBFilters.Controls.Add(this.btnSearch);
             this.GBFilters.Location = new System.Drawing.Point(9, 116);
-            this.GBFilters.Margin = new System.Windows.Forms.Padding(2);
+            this.GBFilters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GBFilters.Name = "GBFilters";
-            this.GBFilters.Padding = new System.Windows.Forms.Padding(2);
+            this.GBFilters.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GBFilters.Size = new System.Drawing.Size(191, 240);
             this.GBFilters.TabIndex = 18;
             this.GBFilters.TabStop = false;
             this.GBFilters.Text = "Filters";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 110);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "SortBy";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(4, 198);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(178, 33);
-            this.btnSearch.TabIndex = 14;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Intake Form",
-            "Birth Certificate",
-            "Medical Form"});
-            this.checkedListBox1.Location = new System.Drawing.Point(5, 18);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(177, 79);
-            this.checkedListBox1.TabIndex = 22;
             // 
             // comboBox1
             // 
@@ -153,6 +121,38 @@
             this.comboBox1.Size = new System.Drawing.Size(177, 21);
             this.comboBox1.TabIndex = 23;
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Intake Form",
+            "Birth Certificate",
+            "Medical Form"});
+            this.checkedListBox1.Location = new System.Drawing.Point(5, 18);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(177, 64);
+            this.checkedListBox1.TabIndex = 22;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "SortBy";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(4, 198);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(178, 33);
+            this.btnSearch.TabIndex = 14;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // NormalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,9 +164,11 @@
             this.Controls.Add(this.LBAssetViewer);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.LTitle);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NormalForm";
             this.Text = "NormalForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NormalForm_FormClosing);
+            this.Load += new System.EventHandler(this.NormalForm_Load);
             this.GBFilters.ResumeLayout(false);
             this.GBFilters.PerformLayout();
             this.ResumeLayout(false);

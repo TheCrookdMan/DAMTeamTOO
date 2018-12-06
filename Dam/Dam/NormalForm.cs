@@ -25,21 +25,18 @@ namespace Dam
             this.Hide();
             LoginForm login = new LoginForm();
 
-            login.Login += new EventHandler(LoginForm_login);
-            login.Cancel += new EventHandler(LoginForm_Cancel);
 
             login.Show();
         }
-        private void LoginForm_login(object sender, EventArgs args)
-        {
-            this.Show();
-           
-        }
 
-        private void LoginForm_Cancel(object sender, EventArgs args)
+        private void NormalForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
- 
+        }
+
+        private void NormalForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
