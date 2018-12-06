@@ -43,24 +43,9 @@ namespace Dam
 
         private void btnDeleteAsset_Click(object sender, EventArgs e)
         {
-            try
+            if (LBAssetViewer.SelectedItem != null)
             {
-                if (LBAssetViewer.Items.Count >= 1)
-                {
-                    if (LBAssetViewer.SelectedValue != null)
-                    {
-                        string SAsset = LBAssetViewer.SelectedItem.ToString();
-                        LBAssetViewer.Items.Remove(SAsset);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Cannot remove");
-                }
-            }
-            catch (Exception blop)
-            {
-
+                LBAssetViewer.Items.Remove(LBAssetViewer.SelectedItem);
             }
         }
 
