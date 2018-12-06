@@ -244,7 +244,7 @@ namespace Dam
 
         private void btnAddAsset_Click(object sender, EventArgs e)
         {
-            throw new Exception("OwO what is this? A error message? Hmmmmmmmm....");
+            throw new Exception("OwO what is this? A error message? Hmmmmmmmm....wait, no please. Don't do it.");
         }
 
         #endregion
