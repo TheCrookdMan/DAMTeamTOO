@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -60,13 +61,12 @@ namespace Dam
                 comboBox1.Items.Clear();
                 if ((sender as CheckedListBox).SelectedItem.ToString() == "Search All")
                 {
-                    int _id = ((sender as CheckedListBox).SelectedItem as Documents).ID;
 
-                   //// foreach (var item in _context.Field_Mappings.Include("doc").ToList().Distinct(new Field_Comp))
-                   //// {
-                   //     comboBox1.Items.Add(item);
+                    foreach (var item in _context.Field_Mappings.Include("doc").ToList().Distinct(new Field_Comp()))
+                    {
+                        comboBox1.Items.Add(item);
 
-                   // }
+                    }
                 }
                 else
                 {
@@ -84,6 +84,14 @@ namespace Dam
         private void NormalForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            using (DB _context = new DB())
+            {
+              var Search = _context.Assets.Include("DocID").ToList();
+            }
         }
     }
 }

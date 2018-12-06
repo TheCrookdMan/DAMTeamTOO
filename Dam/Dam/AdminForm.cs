@@ -58,7 +58,7 @@ namespace Dam
                     MessageBox.Show("Cannot remove");
                 }
             }
-            catch (Exception blop)
+            catch (Exception)
             {
 
             }
