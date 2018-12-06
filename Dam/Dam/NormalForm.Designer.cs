@@ -105,35 +105,6 @@
             this.GBFilters.TabStop = false;
             this.GBFilters.Text = "Filters";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "A-Z (First Name)",
-            "A-Z (Last Name)",
-            "Z-A (First Name)",
-            "Z-A (Last Name)",
-            "ID"});
-            this.comboBox1.Location = new System.Drawing.Point(7, 155);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 24);
-            this.comboBox1.TabIndex = 23;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Intake Form",
-            "Birth Certificate",
-            "Medical Form"});
-            this.checkedListBox1.Location = new System.Drawing.Point(7, 22);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(235, 89);
-            this.checkedListBox1.TabIndex = 22;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -167,7 +138,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NormalForm";
             this.Text = "NormalForm";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NormalForm_FormClosing);
             this.GBFilters.ResumeLayout(false);
             this.GBFilters.PerformLayout();
             this.ResumeLayout(false);
