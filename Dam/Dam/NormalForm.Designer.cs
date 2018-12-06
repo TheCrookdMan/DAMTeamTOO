@@ -34,10 +34,10 @@
             this.tbKeyword = new System.Windows.Forms.TextBox();
             this.LKeyword = new System.Windows.Forms.Label();
             this.GBFilters = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.GBFilters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,6 +106,24 @@
             this.GBFilters.TabStop = false;
             this.GBFilters.Text = "Filters";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(5, 126);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(177, 21);
+            this.comboBox1.TabIndex = 23;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.CheckOnClick = true;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(5, 18);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(177, 79);
+            this.checkedListBox1.TabIndex = 22;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -126,32 +144,6 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Intake Form",
-            "Birth Certificate",
-            "Medical Form"});
-            this.checkedListBox1.Location = new System.Drawing.Point(5, 18);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(177, 79);
-            this.checkedListBox1.TabIndex = 22;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "A-Z (First Name)",
-            "A-Z (Last Name)",
-            "Z-A (First Name)",
-            "Z-A (Last Name)",
-            "ID"});
-            this.comboBox1.Location = new System.Drawing.Point(5, 126);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 21);
-            this.comboBox1.TabIndex = 23;
-            // 
             // NormalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +158,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NormalForm";
             this.Text = "NormalForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.NormalForm_FormClosed);
+            this.Load += new System.EventHandler(this.NormalForm_Load);
             this.GBFilters.ResumeLayout(false);
             this.GBFilters.PerformLayout();
             this.ResumeLayout(false);

@@ -15,5 +15,10 @@ namespace Dam
 
         public List<Field_Mappings> Fields { get; set; }
         public List<Assets> Asset { get; set; }
+
+        public override string ToString()
+        {
+            return Docname;
+        }
     }
 }
