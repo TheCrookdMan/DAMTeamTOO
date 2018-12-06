@@ -51,5 +51,13 @@ namespace Dam
                 MessageBox.Show("Invalid Login Details!", Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void OnEnterLogin(object sender, KeyPressEventArgs e)
+        {
+            if((Keys)e.KeyChar == Keys.Enter)
+            {
+                btnLogin_Click(btnLogin, e);
+            }
+        }
     }
 }
