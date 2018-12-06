@@ -44,18 +44,19 @@
             // LBAssetViewer
             // 
             this.LBAssetViewer.FormattingEnabled = true;
-            this.LBAssetViewer.Location = new System.Drawing.Point(218, 75);
-            this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LBAssetViewer.ItemHeight = 16;
+            this.LBAssetViewer.Location = new System.Drawing.Point(291, 92);
+            this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LBAssetViewer.Name = "LBAssetViewer";
-            this.LBAssetViewer.Size = new System.Drawing.Size(359, 277);
+            this.LBAssetViewer.Size = new System.Drawing.Size(477, 340);
             this.LBAssetViewer.TabIndex = 12;
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(491, 10);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogout.Location = new System.Drawing.Point(655, 12);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(85, 46);
+            this.btnLogout.Size = new System.Drawing.Size(113, 57);
             this.btnLogout.TabIndex = 11;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -65,29 +66,27 @@
             // 
             this.LTitle.AutoSize = true;
             this.LTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTitle.Location = new System.Drawing.Point(59, 15);
-            this.LTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LTitle.Location = new System.Drawing.Point(79, 18);
             this.LTitle.Name = "LTitle";
-            this.LTitle.Size = new System.Drawing.Size(408, 29);
+            this.LTitle.Size = new System.Drawing.Size(496, 36);
             this.LTitle.TabIndex = 9;
             this.LTitle.Text = "Digital Asset Management System";
             // 
             // tbKeyword
             // 
-            this.tbKeyword.Location = new System.Drawing.Point(64, 75);
-            this.tbKeyword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbKeyword.Location = new System.Drawing.Point(85, 92);
+            this.tbKeyword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbKeyword.Multiline = true;
             this.tbKeyword.Name = "tbKeyword";
-            this.tbKeyword.Size = new System.Drawing.Size(138, 19);
+            this.tbKeyword.Size = new System.Drawing.Size(183, 22);
             this.tbKeyword.TabIndex = 20;
             // 
             // LKeyword
             // 
             this.LKeyword.AutoSize = true;
-            this.LKeyword.Location = new System.Drawing.Point(7, 75);
-            this.LKeyword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LKeyword.Location = new System.Drawing.Point(9, 92);
             this.LKeyword.Name = "LKeyword";
-            this.LKeyword.Size = new System.Drawing.Size(54, 13);
+            this.LKeyword.Size = new System.Drawing.Size(70, 17);
             this.LKeyword.TabIndex = 19;
             this.LKeyword.Text = "Keyword :";
             // 
@@ -97,11 +96,11 @@
             this.GBFilters.Controls.Add(this.checkedListBox1);
             this.GBFilters.Controls.Add(this.label1);
             this.GBFilters.Controls.Add(this.btnSearch);
-            this.GBFilters.Location = new System.Drawing.Point(9, 116);
-            this.GBFilters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GBFilters.Location = new System.Drawing.Point(12, 143);
+            this.GBFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GBFilters.Name = "GBFilters";
-            this.GBFilters.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.GBFilters.Size = new System.Drawing.Size(191, 240);
+            this.GBFilters.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GBFilters.Size = new System.Drawing.Size(255, 295);
             this.GBFilters.TabIndex = 18;
             this.GBFilters.TabStop = false;
             this.GBFilters.Text = "Filters";
@@ -116,9 +115,10 @@
             "Z-A (First Name)",
             "Z-A (Last Name)",
             "ID"});
-            this.comboBox1.Location = new System.Drawing.Point(5, 126);
+            this.comboBox1.Location = new System.Drawing.Point(7, 155);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 21);
+            this.comboBox1.Size = new System.Drawing.Size(235, 24);
             this.comboBox1.TabIndex = 23;
             // 
             // checkedListBox1
@@ -128,47 +128,46 @@
             "Intake Form",
             "Birth Certificate",
             "Medical Form"});
-            this.checkedListBox1.Location = new System.Drawing.Point(5, 18);
+            this.checkedListBox1.Location = new System.Drawing.Point(7, 22);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(177, 64);
+            this.checkedListBox1.Size = new System.Drawing.Size(235, 89);
             this.checkedListBox1.TabIndex = 22;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 110);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(50, 17);
             this.label1.TabIndex = 21;
             this.label1.Text = "SortBy";
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(4, 198);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Location = new System.Drawing.Point(5, 244);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(178, 33);
+            this.btnSearch.Size = new System.Drawing.Size(237, 41);
             this.btnSearch.TabIndex = 14;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // NormalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tbKeyword);
             this.Controls.Add(this.LKeyword);
             this.Controls.Add(this.GBFilters);
             this.Controls.Add(this.LBAssetViewer);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.LTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "NormalForm";
             this.Text = "NormalForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NormalForm_FormClosing);
-            this.Load += new System.EventHandler(this.NormalForm_Load);
             this.GBFilters.ResumeLayout(false);
             this.GBFilters.PerformLayout();
             this.ResumeLayout(false);
