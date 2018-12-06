@@ -13,23 +13,11 @@ namespace Dam
 {
     public partial class LoginForm : Form
     {
-        public event EventHandler Login;
-        public event EventHandler Cancel;
+        
+        
         public LoginForm()
         {
             InitializeComponent();
-        }
-
-        private void OnLogin()
-        {
-            if (Login != null)
-                Login(this, EventArgs.Empty);
-        }
-
-        private void OnCancel()
-        {
-            if (Login != null)
-                Login(this, EventArgs.Empty);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -46,14 +34,16 @@ namespace Dam
                         if (user.Position == "Admin")
                         {
                             AdminForm mainForm = new AdminForm();
+                            
                             mainForm.Show();
-                            Hide();
+                            this.Hide();
                         }
                         else
                         {
                             NormalForm mainForm = new NormalForm();
+                            
                             mainForm.Show();
-                            Hide();
+                            this.Hide();
                         }
                         return;
                     }
