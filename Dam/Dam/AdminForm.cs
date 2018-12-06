@@ -27,7 +27,11 @@ namespace Dam
 
                 login.Show();
             }
-           
+
+        private void btnAddAsset_Click(object sender, EventArgs e)
+        {
+            throw new Exception("OwO what is this? A error message? Hmmmmmmmm....wait, no please. Don't do it. Fix this shit");
+        }
 
         private void btnOptions_Click(object sender, EventArgs e)
         {
