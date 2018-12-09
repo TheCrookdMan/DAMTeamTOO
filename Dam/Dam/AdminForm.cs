@@ -63,10 +63,7 @@ namespace Dam
                     MessageBox.Show("Cannot remove");
                 }
             }
-            // catch (Exception)
-            //{
-
-            //}
+           
         }
 
         private void btnBackup_Click(object sender, EventArgs e)
