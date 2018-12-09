@@ -132,6 +132,10 @@
     <Compile Include="Migrations\201812092014445_PopulateDocumentsTable.Designer.cs">
       <DependentUpon>201812092014445_PopulateDocumentsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812092041443_FieldMappings.cs" />
+    <Compile Include="Migrations\201812092041443_FieldMappings.Designer.cs">
+      <DependentUpon>201812092041443_FieldMappings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NormalForm.cs">
       <SubType>Form</SubType>
@@ -185,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812092014445_PopulateDocumentsTable.resx">
       <DependentUpon>201812092014445_PopulateDocumentsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812092041443_FieldMappings.resx">
+      <DependentUpon>201812092041443_FieldMappings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NormalForm.resx">
       <DependentUpon>NormalForm.cs</DependentUpon>
