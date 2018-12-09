@@ -22,14 +22,25 @@ namespace Dam
             this.Close();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        public void addButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cbDocType_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void AddFilterForm_Load(object sender, EventArgs e)
+        {
+            using (DB db = new DB())
+            {
+                foreach (Documents item in db.Documents)
+                {
+                    cbDocType.Items.Add(item);
+                }
+            }
         }
     }
 }

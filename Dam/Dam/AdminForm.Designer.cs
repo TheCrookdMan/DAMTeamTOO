@@ -285,9 +285,9 @@ namespace Dam
         private System.Windows.Forms.Label LKeyword;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox filtersListBox;
         private System.Windows.Forms.ComboBox sortByBox;
         private System.Windows.Forms.Button deleteAF;
         private System.Windows.Forms.Button addAF;
+        public System.Windows.Forms.CheckedListBox filtersListBox;
     }
 }
