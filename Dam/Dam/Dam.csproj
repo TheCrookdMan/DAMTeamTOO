@@ -61,6 +61,12 @@
     <Compile Include="AddAssetForm.Designer.cs">
       <DependentUpon>AddAssetForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFilterForm.Designer.cs">
+      <DependentUpon>AddFilterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs" />
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
@@ -143,6 +149,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddAssetForm.resx">
       <DependentUpon>AddAssetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFilterForm.resx">
+      <DependentUpon>AddFilterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
