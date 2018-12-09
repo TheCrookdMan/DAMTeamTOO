@@ -76,6 +76,12 @@
     </Compile>
     <Compile Include="Assets.cs" />
     <Compile Include="DB.cs" />
+    <Compile Include="DeleteFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFilterForm.Designer.cs">
+      <DependentUpon>DeleteFilterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Documents.cs" />
     <Compile Include="Field Mappings.cs" />
     <Compile Include="Log.cs" />
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFilterForm.resx">
+      <DependentUpon>DeleteFilterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginEdit.resx">
       <DependentUpon>LoginEdit.cs</DependentUpon>

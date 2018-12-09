@@ -114,12 +114,14 @@ namespace Dam
 
         private void addAF_Click(object sender, EventArgs e)
         {
-
+            AddFilterForm AA = new AddFilterForm();
+            AA.ShowDialog();
         }
 
         private void deleteAF_Click(object sender, EventArgs e)
         {
-
+            DeleteFilterForm BB = new DeleteFilterForm();
+            BB.ShowDialog();
         }
 
         private void filtersListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -166,6 +168,11 @@ namespace Dam
         private void sortByBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAddAsset_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }
