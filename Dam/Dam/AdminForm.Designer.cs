@@ -162,7 +162,6 @@ namespace Dam
             this.btnAddAsset.TabIndex = 5;
             this.btnAddAsset.Text = "Add Asset";
             this.btnAddAsset.UseVisualStyleBackColor = true;
-            this.btnAddAsset.Click += new System.EventHandler(this.btnAddAsset_Click);
             // 
             // btnDeleteAsset
             // 
