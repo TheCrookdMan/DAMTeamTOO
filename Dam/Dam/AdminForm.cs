@@ -111,5 +111,61 @@ namespace Dam
         {
             Application.Exit();
         }
+
+        private void addAF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteAF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void filtersListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < filtersListBox.Items.Count; i++)
+            {
+                filtersListBox.SetItemChecked(i, false);
+            }
+            filtersListBox.SetItemChecked(filtersListBox.SelectedIndex, true);
+            using (DB _context = new DB())
+            {
+                sortByBox.Items.Clear();
+                if ((sender as CheckedListBox).SelectedItem.ToString() == "Search All")
+                {
+
+                    foreach (var item in _context.Field_Mappings.Include("doc").ToList().Distinct(new Field_Comp()))
+                    {
+                        sortByBox.Items.Add(item);
+
+                    }
+                }
+                else
+                {
+                    int _id = ((sender as CheckedListBox).SelectedItem as Documents).ID;
+                    foreach (var item in _context.Field_Mappings.Include("doc").Where(f => f.doc.ID == _id).ToList())
+                    {
+                        sortByBox.Items.Add(item);
+
+                    }
+
+                }
+            }
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            using (DB _context = new DB())
+            {
+                var Search = _context.Assets.Include("DocID").ToList();
+            }
+        }
+
+        private void sortByBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
