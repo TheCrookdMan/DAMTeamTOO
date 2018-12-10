@@ -148,7 +148,6 @@ namespace Dam
                     foreach (var item in _context.Field_Mappings.Include("doc").Where(f => f.doc.ID == _id).ToList())
                     {
                         sortByBox.Items.Add(item);
-
                     }
 
                 }

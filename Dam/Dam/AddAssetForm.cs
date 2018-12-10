@@ -19,6 +19,8 @@ namespace Dam
         }
 
         public Admin User;
+        private string FileExtension;
+        private string AssetName;
 
         private void AddAssetForm_Load(object sender, EventArgs e)
         {
@@ -40,44 +42,53 @@ namespace Dam
             {
                 if (FilledIn() == true)
                 {
-                    NewAsset.Location = tbLocation.Text;
+                    string FolderPath;
+                    string FilePath;
+                    NewAsset.CapturedDate = DateTime.Now;
+
+                    FolderPath = tbLocation.Text + "\\";
+                    FilePath = FolderPath + AssetName + "(Moved_Asset)" + FileExtension;
+
+                    NewAsset.Location = FilePath;
 
                     NewAsset.CapturedBy = User;
 
-                    NewAsset.CapturedDate = DateTime.Now;
 
                     foreach (Documents document in db.Documents)
                     {
                         if (document.ID == ((Documents)cbDocType.SelectedItem).ID)
                         {
                             NewAsset.DocID = document;
-                            foreach (Field_Mappings fields in db.Field_Mappings)
+                            
+                        }
+                    }
+                    foreach (Field_Mappings fields in db.Field_Mappings)
+                    {
+                        if (fields.doc.ID == ((Documents)cbDocType.SelectedItem).ID)
+                        {
+                            Metadata Data = new Metadata();
+
+                            AddDataForm AddData = new AddDataForm();
+                            AddData.label = fields.Field;
+                            AddData.ShowDialog();
+
+                            if (AddData.FieldValue != null)
                             {
-                                if (fields.doc.ID == document.ID)
-                                {
-                                    Metadata Data = new Metadata();
-
-                                    AddDataForm AddData = new AddDataForm();
-                                    AddData.label = fields.Field;
-                                    AddData.ShowDialog();
-
-                                    if (AddData.FieldValue != null)
-                                    {
-                                        Data.FieldValue = AddData.FieldValue;
-                                    }
-
-                                    Data.document = document;
-                                    Data.FieldMeta = fields;
-                                    Data.AssetMeta = NewAsset;
-
-                                    db.Metadatas.Add(Data);
-                                }
+                                Data.FieldValue = AddData.FieldValue;
                             }
+
+                            Data.FieldMeta = fields;
+                            Data.AssetMeta = NewAsset;
+
+                            db.Metadatas.Add(Data);
                         }
                     }
                     db.Assets.Add(NewAsset);
-                    File.Move(tbAsset.Text, tbLocation.Text);
+
+                    File.Move(tbAsset.Text,FilePath);
+
                     db.SaveChanges();
+                    Close();
                 }                
             }          
         }
@@ -105,6 +116,8 @@ namespace Dam
             if (open.FileName != null)
             {
                 tbAsset.Text = open.FileName;
+                FileExtension = Path.GetExtension(open.FileName);
+                AssetName = Path.GetFileNameWithoutExtension(open.FileName);
             }
         }
 

@@ -114,7 +114,7 @@ namespace Dam
             // deleteAF
             // 
             this.deleteAF.Location = new System.Drawing.Point(142, 113);
-            this.deleteAF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteAF.Margin = new System.Windows.Forms.Padding(4);
             this.deleteAF.Name = "deleteAF";
             this.deleteAF.Size = new System.Drawing.Size(100, 28);
             this.deleteAF.TabIndex = 26;
@@ -125,7 +125,7 @@ namespace Dam
             // addAF
             // 
             this.addAF.Location = new System.Drawing.Point(7, 113);
-            this.addAF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addAF.Margin = new System.Windows.Forms.Padding(4);
             this.addAF.Name = "addAF";
             this.addAF.Size = new System.Drawing.Size(100, 28);
             this.addAF.TabIndex = 25;
@@ -144,7 +144,7 @@ namespace Dam
             "Z-A (Last Name)",
             "ID"});
             this.sortByBox.Location = new System.Drawing.Point(9, 168);
-            this.sortByBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sortByBox.Margin = new System.Windows.Forms.Padding(4);
             this.sortByBox.Name = "sortByBox";
             this.sortByBox.Size = new System.Drawing.Size(235, 24);
             this.sortByBox.TabIndex = 24;
@@ -157,7 +157,7 @@ namespace Dam
             "Birth Certificate",
             "Medical Form"});
             this.filtersListBox.Location = new System.Drawing.Point(7, 22);
-            this.filtersListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.filtersListBox.Margin = new System.Windows.Forms.Padding(4);
             this.filtersListBox.Name = "filtersListBox";
             this.filtersListBox.Size = new System.Drawing.Size(240, 72);
             this.filtersListBox.TabIndex = 23;
@@ -283,6 +283,7 @@ namespace Dam
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnEditLogin);
             this.Controls.Add(this.LTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminForm";
             this.Text = "AdminForm";

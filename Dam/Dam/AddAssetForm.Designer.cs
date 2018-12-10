@@ -45,67 +45,63 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(45, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Asset:";
             // 
             // tbAsset
             // 
-            this.tbAsset.Location = new System.Drawing.Point(70, 43);
-            this.tbAsset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAsset.Location = new System.Drawing.Point(93, 53);
+            this.tbAsset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAsset.Name = "tbAsset";
             this.tbAsset.ReadOnly = true;
-            this.tbAsset.Size = new System.Drawing.Size(203, 20);
+            this.tbAsset.Size = new System.Drawing.Size(269, 22);
             this.tbAsset.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(21, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "DocType:";
             // 
             // tbChangedBy
             // 
-            this.tbChangedBy.Location = new System.Drawing.Point(70, 66);
-            this.tbChangedBy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbChangedBy.Location = new System.Drawing.Point(93, 81);
+            this.tbChangedBy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbChangedBy.Name = "tbChangedBy";
             this.tbChangedBy.ReadOnly = true;
-            this.tbChangedBy.Size = new System.Drawing.Size(203, 20);
+            this.tbChangedBy.Size = new System.Drawing.Size(269, 22);
             this.tbChangedBy.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 68);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(3, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.Size = new System.Drawing.Size(89, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Changed By:";
             // 
             // tbLocation
             // 
-            this.tbLocation.Location = new System.Drawing.Point(70, 89);
-            this.tbLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbLocation.Location = new System.Drawing.Point(93, 110);
+            this.tbLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbLocation.Name = "tbLocation";
             this.tbLocation.ReadOnly = true;
-            this.tbLocation.Size = new System.Drawing.Size(203, 20);
+            this.tbLocation.Size = new System.Drawing.Size(269, 22);
             this.tbLocation.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 92);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(25, 113);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(66, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Location:";
             // 
@@ -113,19 +109,19 @@
             // 
             this.cbDocType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDocType.FormattingEnabled = true;
-            this.cbDocType.Location = new System.Drawing.Point(70, 19);
-            this.cbDocType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbDocType.Location = new System.Drawing.Point(93, 23);
+            this.cbDocType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDocType.Name = "cbDocType";
-            this.cbDocType.Size = new System.Drawing.Size(203, 21);
+            this.cbDocType.Size = new System.Drawing.Size(269, 24);
             this.cbDocType.TabIndex = 8;
             // 
             // btnBrowseAsset
             // 
             this.btnBrowseAsset.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseAsset.Location = new System.Drawing.Point(276, 43);
-            this.btnBrowseAsset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBrowseAsset.Location = new System.Drawing.Point(368, 53);
+            this.btnBrowseAsset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowseAsset.Name = "btnBrowseAsset";
-            this.btnBrowseAsset.Size = new System.Drawing.Size(28, 19);
+            this.btnBrowseAsset.Size = new System.Drawing.Size(37, 23);
             this.btnBrowseAsset.TabIndex = 9;
             this.btnBrowseAsset.Text = "...";
             this.btnBrowseAsset.UseVisualStyleBackColor = true;
@@ -134,10 +130,10 @@
             // btnBrowseLocation
             // 
             this.btnBrowseLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseLocation.Location = new System.Drawing.Point(276, 89);
-            this.btnBrowseLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBrowseLocation.Location = new System.Drawing.Point(368, 110);
+            this.btnBrowseLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowseLocation.Name = "btnBrowseLocation";
-            this.btnBrowseLocation.Size = new System.Drawing.Size(28, 19);
+            this.btnBrowseLocation.Size = new System.Drawing.Size(37, 23);
             this.btnBrowseLocation.TabIndex = 10;
             this.btnBrowseLocation.Text = "...";
             this.btnBrowseLocation.UseVisualStyleBackColor = true;
@@ -145,10 +141,10 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(70, 115);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNext.Location = new System.Drawing.Point(93, 142);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(100, 28);
             this.btnNext.TabIndex = 11;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -156,10 +152,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(196, 115);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Location = new System.Drawing.Point(261, 142);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -167,9 +163,10 @@
             // 
             // AddAssetForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnNext;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 147);
+            this.ClientSize = new System.Drawing.Size(416, 181);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBrowseLocation);
@@ -182,7 +179,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbAsset);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddAssetForm";
             this.Text = "AddAssetForm";
             this.Load += new System.EventHandler(this.AddAssetForm_Load);
