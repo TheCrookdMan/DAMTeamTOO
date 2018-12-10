@@ -54,7 +54,7 @@ namespace Dam
             // 
             this.LTitle.AutoSize = true;
             this.LTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTitle.Location = new System.Drawing.Point(88, 15);
+            this.LTitle.Location = new System.Drawing.Point(101, 15);
             this.LTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LTitle.Name = "LTitle";
             this.LTitle.Size = new System.Drawing.Size(408, 29);
@@ -63,7 +63,7 @@ namespace Dam
             // 
             // btnEditLogin
             // 
-            this.btnEditLogin.Location = new System.Drawing.Point(8, 10);
+            this.btnEditLogin.Location = new System.Drawing.Point(9, 10);
             this.btnEditLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditLogin.Name = "btnEditLogin";
             this.btnEditLogin.Size = new System.Drawing.Size(85, 46);
@@ -74,7 +74,7 @@ namespace Dam
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(491, 10);
+            this.btnLogout.Location = new System.Drawing.Point(513, 10);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(85, 46);
@@ -86,7 +86,7 @@ namespace Dam
             // LBAssetViewer
             // 
             this.LBAssetViewer.FormattingEnabled = true;
-            this.LBAssetViewer.Location = new System.Drawing.Point(218, 75);
+            this.LBAssetViewer.Location = new System.Drawing.Point(239, 76);
             this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(2);
             this.LBAssetViewer.Name = "LBAssetViewer";
             this.LBAssetViewer.Size = new System.Drawing.Size(359, 238);
@@ -160,12 +160,12 @@ namespace Dam
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 155);
+            this.label1.Location = new System.Drawing.Point(4, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 21;
-            this.label1.Text = "SortBy";
+            this.label1.Text = "Sort By:";
             // 
             // btnSearch
             // 
@@ -180,7 +180,7 @@ namespace Dam
             // 
             // btnAddAsset
             // 
-            this.btnAddAsset.Location = new System.Drawing.Point(218, 318);
+            this.btnAddAsset.Location = new System.Drawing.Point(239, 319);
             this.btnAddAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddAsset.Name = "btnAddAsset";
             this.btnAddAsset.Size = new System.Drawing.Size(86, 39);
@@ -191,7 +191,7 @@ namespace Dam
             // 
             // btnDeleteAsset
             // 
-            this.btnDeleteAsset.Location = new System.Drawing.Point(309, 318);
+            this.btnDeleteAsset.Location = new System.Drawing.Point(330, 319);
             this.btnDeleteAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteAsset.Name = "btnDeleteAsset";
             this.btnDeleteAsset.Size = new System.Drawing.Size(86, 39);
@@ -202,7 +202,7 @@ namespace Dam
             // 
             // btnOptions
             // 
-            this.btnOptions.Location = new System.Drawing.Point(490, 317);
+            this.btnOptions.Location = new System.Drawing.Point(511, 319);
             this.btnOptions.Margin = new System.Windows.Forms.Padding(2);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(86, 39);
@@ -213,7 +213,7 @@ namespace Dam
             // 
             // btnBackup
             // 
-            this.btnBackup.Location = new System.Drawing.Point(400, 318);
+            this.btnBackup.Location = new System.Drawing.Point(421, 319);
             this.btnBackup.Margin = new System.Windows.Forms.Padding(2);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.Size = new System.Drawing.Size(86, 39);
@@ -234,7 +234,7 @@ namespace Dam
             // LKeyword
             // 
             this.LKeyword.AutoSize = true;
-            this.LKeyword.Location = new System.Drawing.Point(7, 75);
+            this.LKeyword.Location = new System.Drawing.Point(8, 77);
             this.LKeyword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LKeyword.Name = "LKeyword";
             this.LKeyword.Size = new System.Drawing.Size(54, 13);
@@ -245,7 +245,7 @@ namespace Dam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(612, 366);
             this.Controls.Add(this.tbKeyword);
             this.Controls.Add(this.LKeyword);
             this.Controls.Add(this.btnBackup);

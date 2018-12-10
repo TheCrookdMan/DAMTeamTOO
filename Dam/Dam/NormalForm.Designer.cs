@@ -44,10 +44,10 @@
             // LBAssetViewer
             // 
             this.LBAssetViewer.FormattingEnabled = true;
-            this.LBAssetViewer.Location = new System.Drawing.Point(218, 75);
+            this.LBAssetViewer.Location = new System.Drawing.Point(240, 79);
             this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(2);
             this.LBAssetViewer.Name = "LBAssetViewer";
-            this.LBAssetViewer.Size = new System.Drawing.Size(359, 277);
+            this.LBAssetViewer.Size = new System.Drawing.Size(361, 277);
             this.LBAssetViewer.TabIndex = 12;
             this.LBAssetViewer.SelectedIndexChanged += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -66,7 +66,7 @@
             // 
             this.LTitle.AutoSize = true;
             this.LTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTitle.Location = new System.Drawing.Point(59, 15);
+            this.LTitle.Location = new System.Drawing.Point(101, 15);
             this.LTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LTitle.Name = "LTitle";
             this.LTitle.Size = new System.Drawing.Size(408, 29);
@@ -85,7 +85,7 @@
             // LKeyword
             // 
             this.LKeyword.AutoSize = true;
-            this.LKeyword.Location = new System.Drawing.Point(7, 75);
+            this.LKeyword.Location = new System.Drawing.Point(8, 77);
             this.LKeyword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LKeyword.Name = "LKeyword";
             this.LKeyword.Size = new System.Drawing.Size(54, 13);
@@ -127,11 +127,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 135);
+            this.label1.Location = new System.Drawing.Point(5, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 21;
-            this.label1.Text = "SortBy";
+            this.label1.Text = "Sort By:";
             // 
             // btnSearch
             // 
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(612, 366);
             this.Controls.Add(this.tbKeyword);
             this.Controls.Add(this.LKeyword);
             this.Controls.Add(this.GBFilters);
