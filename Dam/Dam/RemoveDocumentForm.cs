@@ -17,7 +17,7 @@ namespace Dam
             InitializeComponent();
         }
 
-        private DB db;
+        private DB db = new DB();
 
         private void RemoveDocumentForm_Load(object sender, EventArgs e)
         {
@@ -36,16 +36,24 @@ namespace Dam
         {
             if (cbTypes.SelectedIndex >= 0)
             {
+                foreach (Field_Mappings field in db.Field_Mappings)
+                {
+                    if (field.doc.ID == ((Documents)cbTypes.SelectedItem).ID)
+                    {
+                        db.Field_Mappings.Remove(field);
+                    }
+                }
                 foreach (Documents Type in db.Documents)
                 {
+                    
                     if (Type.ID == ((Documents)cbTypes.SelectedItem).ID)
                     {
                         db.Documents.Remove(Type);
-                        db.SaveChanges();
                         Close();
                     }
                 }
-            }            
+            }
+            db.SaveChanges();
         }
     }
 }
