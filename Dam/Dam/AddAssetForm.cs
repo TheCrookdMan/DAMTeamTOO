@@ -50,7 +50,7 @@ namespace Dam
 
                     foreach (Documents item in db.Documents)
                     {
-                        if (item == cbDocType.SelectedItem)
+                        if (item.ID == ((Documents)cbDocType.SelectedItem).ID)
                         {
                             foreach (Field_Mappings fields in item.Fields)
                             {
@@ -70,10 +70,15 @@ namespace Dam
 
                                     db.Metadatas.Add(NewMeta);
                                 }
+                                else
+                                {
+                                    Close();
+                                }
                             }
                         }
                     }
                     db.Assets.Add(NewAsset);
+                    File.Move(tbAsset.Text, tbLocation.Text);
                     db.SaveChanges();
                 }                
             }          
