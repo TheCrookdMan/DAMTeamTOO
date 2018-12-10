@@ -114,14 +114,24 @@ namespace Dam
 
         private void addAF_Click(object sender, EventArgs e)
         {
-            AddFilterForm AA = new AddFilterForm();
-            AA.ShowDialog();
+            AddFilterForm addFilterForm = new AddFilterForm();
+            if (addFilterForm.ShowDialog(this) == DialogResult.OK)
+            {
+                filtersListBox.Items.Add(addFilterForm.getItem());
+            }
+            addFilterForm.Close();
+            //addFilterForm.ShowDialog();
         }
 
         private void deleteAF_Click(object sender, EventArgs e)
         {
-            DeleteFilterForm BB = new DeleteFilterForm();
-            BB.ShowDialog();
+            DeleteFilterForm deleteFilterForm = new DeleteFilterForm();
+            if (deleteFilterForm.ShowDialog(this) == DialogResult.OK)
+            {
+                filtersListBox.Items.Remove(deleteFilterForm.getItem());
+            }
+            deleteFilterForm.Close();
+            //deleteFilterForm.ShowDialog();
         }
 
         private void filtersListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -136,11 +146,9 @@ namespace Dam
                 sortByBox.Items.Clear();
                 if ((sender as CheckedListBox).SelectedItem.ToString() == "Search All")
                 {
-
                     foreach (var item in _context.Field_Mappings.Include("doc").ToList().Distinct(new Field_Comp()))
                     {
                         sortByBox.Items.Add(item);
-
                     }
                 }
                 else
@@ -163,16 +171,6 @@ namespace Dam
             {
                 var Search = _context.Assets.Include("DocID").ToList();
             }
-        }
-
-        private void sortByBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAddAsset_Click_1(object sender, EventArgs e)
-        {
-            
         }
     }
 }

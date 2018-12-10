@@ -143,7 +143,6 @@ namespace Dam
             this.sortByBox.Name = "sortByBox";
             this.sortByBox.Size = new System.Drawing.Size(177, 21);
             this.sortByBox.TabIndex = 24;
-            this.sortByBox.SelectedIndexChanged += new System.EventHandler(this.sortByBox_SelectedIndexChanged);
             // 
             // filtersListBox
             // 

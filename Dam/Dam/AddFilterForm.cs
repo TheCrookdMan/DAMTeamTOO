@@ -15,6 +15,13 @@ namespace Dam
         public AddFilterForm()
         {
             InitializeComponent();
+            addButton.DialogResult = DialogResult.OK;
+            cancelButton.DialogResult = DialogResult.Cancel;
+        }
+
+        public string getItem()
+        {
+            return filterNameTB.Text;
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -22,14 +29,22 @@ namespace Dam
             this.Close();
         }
 
-        public void addButton_Click(object sender, EventArgs e)
+        private bool FilledIn()
         {
-            
+            if (cbDocType.SelectedIndex > 0)
+            {
+                if (filterNameTB.Text != null)
+                {
+                    return true;
+                }
+            }
+            MessageBox.Show("Please fill in the required fields");
+            return false;
         }
 
-        private void cbDocType_SelectedIndexChanged(object sender, EventArgs e)
+        public void addButton_Click(object sender, EventArgs e)
         {
-
+            //DialogResult.OK;
         }
 
         private void AddFilterForm_Load(object sender, EventArgs e)

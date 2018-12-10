@@ -15,6 +15,13 @@ namespace Dam
         public DeleteFilterForm()
         {
             InitializeComponent();
+            removeButton.DialogResult = DialogResult.OK;
+            cancelButton.DialogResult = DialogResult.Cancel;
+        }
+
+        public string getItem()
+        {
+            return filterNameTB.Text;
         }
 
         private void cancelButton_Click(object sender, EventArgs e)

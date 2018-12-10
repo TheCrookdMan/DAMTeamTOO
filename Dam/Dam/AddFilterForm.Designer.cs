@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.filterNameTB = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.cbDocType = new System.Windows.Forms.ComboBox();
@@ -45,12 +45,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Filter Name:";
             // 
-            // textBox1
+            // filterNameTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 20);
-            this.textBox1.TabIndex = 2;
+            this.filterNameTB.Location = new System.Drawing.Point(81, 6);
+            this.filterNameTB.Name = "filterNameTB";
+            this.filterNameTB.Size = new System.Drawing.Size(203, 20);
+            this.filterNameTB.TabIndex = 2;
             // 
             // addButton
             // 
@@ -81,7 +81,6 @@
             this.cbDocType.Name = "cbDocType";
             this.cbDocType.Size = new System.Drawing.Size(203, 21);
             this.cbDocType.TabIndex = 10;
-            this.cbDocType.SelectedIndexChanged += new System.EventHandler(this.cbDocType_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -102,7 +101,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.filterNameTB);
             this.Controls.Add(this.label1);
             this.Name = "AddFilterForm";
             this.Text = "AddFilterForm";
@@ -115,7 +114,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox filterNameTB;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.ComboBox cbDocType;

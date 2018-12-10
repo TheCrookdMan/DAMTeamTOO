@@ -30,7 +30,7 @@
         {
             this.cancelButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.filterNameTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -53,12 +53,12 @@
             this.removeButton.Text = "Remove";
             this.removeButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // filterNameTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(81, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 20);
-            this.textBox1.TabIndex = 12;
+            this.filterNameTB.Location = new System.Drawing.Point(81, 6);
+            this.filterNameTB.Name = "filterNameTB";
+            this.filterNameTB.Size = new System.Drawing.Size(203, 20);
+            this.filterNameTB.TabIndex = 12;
             // 
             // label1
             // 
@@ -76,7 +76,7 @@
             this.ClientSize = new System.Drawing.Size(293, 89);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.removeButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.filterNameTB);
             this.Controls.Add(this.label1);
             this.Name = "DeleteFilterForm";
             this.Text = "DeleteFilterForm";
@@ -88,7 +88,7 @@
         #endregion
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button removeButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox filterNameTB;
         private System.Windows.Forms.Label label1;
     }
 }
