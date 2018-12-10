@@ -175,5 +175,17 @@ namespace Dam
                 var Search = _context.Assets.Include("DocID").ToList();
             }
         }
+
+        private void btnRemoveDoc_Click(object sender, EventArgs e)
+        {
+            RemoveDocumentForm RemoveDocument = new RemoveDocumentForm();
+            RemoveDocument.ShowDialog();
+        }
+
+        private void btnAddDoc_Click(object sender, EventArgs e)
+        {
+            AddDocumentForm AddDocument = new AddDocumentForm();
+            AddDocument.ShowDialog();
+        }
     }
 }

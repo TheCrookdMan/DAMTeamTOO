@@ -1,6 +1,6 @@
 ﻿namespace Dam
 {
-    partial class AddFieldValueForm
+    partial class AddDataForm
     {
         /// <summary>
         /// Required designer variable.
@@ -38,7 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 9);
+            this.label1.Location = new System.Drawing.Point(101, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 17);
             this.label1.TabIndex = 0;
@@ -46,14 +46,14 @@
             // 
             // tbField
             // 
-            this.tbField.Location = new System.Drawing.Point(58, 40);
+            this.tbField.Location = new System.Drawing.Point(104, 42);
             this.tbField.Name = "tbField";
             this.tbField.Size = new System.Drawing.Size(216, 22);
             this.tbField.TabIndex = 1;
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(58, 68);
+            this.btnNext.Location = new System.Drawing.Point(104, 70);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 31);
             this.btnNext.TabIndex = 2;
@@ -64,7 +64,7 @@
             // lblField
             // 
             this.lblField.AutoSize = true;
-            this.lblField.Location = new System.Drawing.Point(10, 45);
+            this.lblField.Location = new System.Drawing.Point(12, 45);
             this.lblField.Name = "lblField";
             this.lblField.Size = new System.Drawing.Size(42, 17);
             this.lblField.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(199, 68);
+            this.btnCancel.Location = new System.Drawing.Point(245, 70);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 31);
             this.btnCancel.TabIndex = 4;
@@ -80,18 +80,18 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // AddFieldValueForm
+            // AddDataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 117);
+            this.ClientSize = new System.Drawing.Size(362, 117);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblField);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.tbField);
             this.Controls.Add(this.label1);
-            this.Name = "AddFieldValueForm";
-            this.Text = "AddFieldValueForm";
+            this.Name = "AddDataForm";
+            this.Text = "AddDataForm";
             this.Load += new System.EventHandler(this.AddFieldValueForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -46,33 +46,31 @@ namespace Dam
 
                     NewAsset.CapturedDate = DateTime.Now;
 
-                    NewAsset.DocID = (Documents)cbDocType.SelectedItem;
-
-                    foreach (Documents item in db.Documents)
+                    foreach (Documents document in db.Documents)
                     {
-                        if (item.ID == ((Documents)cbDocType.SelectedItem).ID)
+                        if (document.ID == ((Documents)cbDocType.SelectedItem).ID)
                         {
-                            foreach (Field_Mappings fields in item.Fields)
+                            NewAsset.DocID = document;
+                            foreach (Field_Mappings fields in db.Field_Mappings)
                             {
-                                AddFieldValueForm AddValue = new AddFieldValueForm();
-                                AddValue.label = fields.Field;
-                                AddValue.ShowDialog();
-
-                                if (AddValue.FieldValue != null)
+                                if (fields.doc.ID == document.ID)
                                 {
-                                    Metadata NewMeta = new Metadata();
-                                    NewMeta.document = (Documents)cbDocType.SelectedItem;
-                                    NewMeta.FieldValue = AddValue.FieldValue;
-                                    NewMeta.AssetMeta = NewAsset;
-                                    NewMeta.FieldMeta = fields;
+                                    Metadata Data = new Metadata();
 
-                                    NewAsset.meta.Add(NewMeta);
+                                    AddDataForm AddData = new AddDataForm();
+                                    AddData.label = fields.Field;
+                                    AddData.ShowDialog();
 
-                                    db.Metadatas.Add(NewMeta);
-                                }
-                                else
-                                {
-                                    Close();
+                                    if (AddData.FieldValue != null)
+                                    {
+                                        Data.FieldValue = AddData.FieldValue;
+                                    }
+
+                                    Data.document = document;
+                                    Data.FieldMeta = fields;
+                                    Data.AssetMeta = NewAsset;
+
+                                    db.Metadatas.Add(Data);
                                 }
                             }
                         }
@@ -113,6 +111,7 @@ namespace Dam
         private void btnBrowseLocation_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
+            folderBrowser.SelectedPath = @"\\25.16.124.220\TeamToo";
             folderBrowser.ShowDialog();
             if (folderBrowser.SelectedPath != null)
             {

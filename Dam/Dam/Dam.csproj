@@ -61,11 +61,23 @@
     <Compile Include="AddAssetForm.Designer.cs">
       <DependentUpon>AddAssetForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddFieldValueForm.cs">
+    <Compile Include="AddDocumentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddFieldValueForm.Designer.cs">
-      <DependentUpon>AddFieldValueForm.cs</DependentUpon>
+    <Compile Include="AddDocumentForm.Designer.cs">
+      <DependentUpon>AddDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFieldMappingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFieldMappingForm.Designer.cs">
+      <DependentUpon>AddFieldMappingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDataForm.Designer.cs">
+      <DependentUpon>AddDataForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AddFilterForm.cs">
       <SubType>Form</SubType>
@@ -163,11 +175,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveDocumentForm.Designer.cs">
+      <DependentUpon>RemoveDocumentForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAssetForm.resx">
       <DependentUpon>AddAssetForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddFieldValueForm.resx">
-      <DependentUpon>AddFieldValueForm.cs</DependentUpon>
+    <EmbeddedResource Include="AddDocumentForm.resx">
+      <DependentUpon>AddDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFieldMappingForm.resx">
+      <DependentUpon>AddFieldMappingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDataForm.resx">
+      <DependentUpon>AddDataForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddFilterForm.resx">
       <DependentUpon>AddFilterForm.cs</DependentUpon>
@@ -233,6 +257,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RemoveDocumentForm.resx">
+      <DependentUpon>RemoveDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

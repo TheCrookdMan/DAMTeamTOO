@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace Dam
 {
-    public partial class AddFieldValueForm : Form
+    public partial class AddFieldMappingForm : Form
     {
-        public AddFieldValueForm()
+        public AddFieldMappingForm()
         {
             InitializeComponent();
         }
-        public string FieldValue;
-        public string label;
+
+        public string FieldName;
+        public string FieldNum;
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -26,13 +27,13 @@ namespace Dam
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            FieldValue = tbField.Text;
+            FieldName = tbName.Text;
             Close();
         }
 
-        private void AddFieldValueForm_Load(object sender, EventArgs e)
+        private void AddFieldMappingForm_Load(object sender, EventArgs e)
         {
-            lblField.Text = label + " :";
+            lbNum.Text = FieldNum;
         }
     }
 }
