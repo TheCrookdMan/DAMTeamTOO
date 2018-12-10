@@ -48,26 +48,29 @@ namespace Dam
 
                     NewAsset.DocID = (Documents)cbDocType.SelectedItem;
 
-                    foreach (Field_Mappings fields in db.Field_Mappings)
+                    foreach (Documents item in db.Documents)
                     {
-                        if (fields.doc.ID == ((Documents)cbDocType.SelectedItem).ID)
+                        if (item == cbDocType.SelectedItem)
                         {
-                            AddFieldValueForm AddValue = new AddFieldValueForm();
-                            AddValue.label = fields.Field;
-                            AddValue.ShowDialog();
-
-                            if (AddValue.FieldValue != null)
+                            foreach (Field_Mappings fields in item.Fields)
                             {
-                                Metadata NewMeta = new Metadata();
-                                NewMeta.document = (Documents)cbDocType.SelectedItem;
-                                NewMeta.FieldValue = AddValue.FieldValue;
-                                NewMeta.AssetMeta = NewAsset;
-                                NewMeta.FieldMeta = fields;
+                                AddFieldValueForm AddValue = new AddFieldValueForm();
+                                AddValue.label = fields.Field;
+                                AddValue.ShowDialog();
 
-                                NewAsset.meta.Add(NewMeta);
+                                if (AddValue.FieldValue != null)
+                                {
+                                    Metadata NewMeta = new Metadata();
+                                    NewMeta.document = (Documents)cbDocType.SelectedItem;
+                                    NewMeta.FieldValue = AddValue.FieldValue;
+                                    NewMeta.AssetMeta = NewAsset;
+                                    NewMeta.FieldMeta = fields;
 
-                                db.Metadatas.Add(NewMeta);
-                            }                            
+                                    NewAsset.meta.Add(NewMeta);
+
+                                    db.Metadatas.Add(NewMeta);
+                                }
+                            }
                         }
                     }
                     db.Assets.Add(NewAsset);
@@ -78,7 +81,7 @@ namespace Dam
 
         private bool FilledIn()
         {
-            if (cbDocType.SelectedIndex > 0)
+            if (cbDocType.SelectedIndex >= 0)
             {
                 if (tbAsset.Text != null)
                 {
