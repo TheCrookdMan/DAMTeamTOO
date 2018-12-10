@@ -19,7 +19,7 @@ namespace Dam
         {
             return $"{ID}: {Location.Split('\\').Last()} {spacecount(Location.Split('/').Last())} [{DocID.Asset}]";
         }
-
+        
         private object spacecount(string v)
         {
             try
