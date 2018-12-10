@@ -79,7 +79,7 @@ namespace Dam
                 List<Metadata> bMetadatas = db.Metadatas.ToList();
                 List<Admin> bAdmins = db.Admins.ToList();
 
-                string backupPath = "\\\\DESKTOP-MK7928K\\TeamToo\\Backups\\Manual\\";
+                string backupPath = "\\\\DESKTOP-E2QDCCA\\TeamToo\\Backups\\Manual\\";
                 string path = backupPath + DateTime.Now.Year.ToString() + "-" + DateTime.Now.ToString("ddhhmmss") + ".txt";
                 File.Create(path).Close();
                 TextWriter tw = new StreamWriter(path, true);
