@@ -106,6 +106,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddFilterForm";
             this.Text = "AddFilterForm";
+            this.Load += new System.EventHandler(this.AddFilterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
