@@ -53,20 +53,8 @@ namespace Dam
         {
             if (LBAssetViewer.SelectedItem != null)
             {
-                if (LBAssetViewer.Items.Count >= 1)
-                {
-                    if (LBAssetViewer.SelectedValue != null)
-                    {
-                        string SAsset = LBAssetViewer.SelectedItem.ToString();
-                        LBAssetViewer.Items.Remove(SAsset);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Cannot remove");
-                }
+                LBAssetViewer.Items.Remove(LBAssetViewer.SelectedItem);
             }
-           
         }
 
         private void btnBackup_Click(object sender, EventArgs e)
