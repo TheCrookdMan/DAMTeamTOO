@@ -18,6 +18,8 @@ namespace Dam
             InitializeComponent();
         }
 
+        public Admin User;
+
         private void AddAssetForm_Load(object sender, EventArgs e)
         {
             using (DB db = new DB())
@@ -26,31 +28,49 @@ namespace Dam
                 {
                     cbDocType.Items.Add(item);
                 }
+                tbChangedBy.Text = User.AdminName;
             }
         }
 
         private void btnAddAsset_Click(object sender, EventArgs e)
         {
+            Assets NewAsset = new Assets();
+
             using (DB db = new DB())
             {
                 if (FilledIn() == true)
                 {
-                    Assets Asset = new Assets();
-                    Admin Dummy = new Admin();
+                    NewAsset.Location = tbLocation.Text;
 
-                    Asset.Location = tbLocation.Text;
-                    Asset.CapturedBy = Dummy;
-                    Asset.CapturedDate = DateTime.Now;
-                    Asset.DocID = (Documents)cbDocType.SelectedItem;
+                    NewAsset.CapturedBy = User;
 
-                    foreach (Metadata item in lbMetaData.Items)
+                    NewAsset.CapturedDate = DateTime.Now;
+
+                    NewAsset.DocID = (Documents)cbDocType.SelectedItem;
+
+                    foreach (Field_Mappings fields in db.Field_Mappings)
                     {
-                        Asset.meta.Add(item);
+                        if (fields.doc.ID == ((Documents)cbDocType.SelectedItem).ID)
+                        {
+                            AddFieldValueForm AddValue = new AddFieldValueForm();
+                            AddValue.label = fields.Field;
+                            AddValue.ShowDialog();
+
+                            if (AddValue.FieldValue != null)
+                            {
+                                Metadata NewMeta = new Metadata();
+                                NewMeta.document = (Documents)cbDocType.SelectedItem;
+                                NewMeta.FieldValue = AddValue.FieldValue;
+                                NewMeta.AssetMeta = NewAsset;
+                                NewMeta.FieldMeta = fields;
+
+                                NewAsset.meta.Add(NewMeta);
+
+                                db.Metadatas.Add(NewMeta);
+                            }                            
+                        }
                     }
-
-                    File.Move(tbAsset.Text, tbLocation.Text);
-
-                    db.Assets.Add(Asset);
+                    db.Assets.Add(NewAsset);
                     db.SaveChanges();
                 }                
             }          
@@ -95,11 +115,6 @@ namespace Dam
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void btnRemoveMeta_Click(object sender, EventArgs e)
-        {
-            lbMetaData.Items.Remove(lbMetaData.SelectedItem);
         }
     }
 }

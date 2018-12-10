@@ -38,78 +38,70 @@
             this.cbDocType = new System.Windows.Forms.ComboBox();
             this.btnBrowseAsset = new System.Windows.Forms.Button();
             this.btnBrowseLocation = new System.Windows.Forms.Button();
-            this.btnAddAsset = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.lbMetaData = new System.Windows.Forms.ListBox();
-            this.btnAddMeta = new System.Windows.Forms.Button();
-            this.btnRemoveMeta = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(40, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Asset:";
             // 
             // tbAsset
             // 
-            this.tbAsset.Location = new System.Drawing.Point(70, 43);
-            this.tbAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.tbAsset.Location = new System.Drawing.Point(93, 53);
+            this.tbAsset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAsset.Name = "tbAsset";
             this.tbAsset.ReadOnly = true;
-            this.tbAsset.Size = new System.Drawing.Size(203, 20);
+            this.tbAsset.Size = new System.Drawing.Size(269, 22);
             this.tbAsset.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 21);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(19, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "DocType:";
             // 
             // tbChangedBy
             // 
-            this.tbChangedBy.Location = new System.Drawing.Point(70, 66);
-            this.tbChangedBy.Margin = new System.Windows.Forms.Padding(2);
+            this.tbChangedBy.Location = new System.Drawing.Point(93, 81);
+            this.tbChangedBy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbChangedBy.Name = "tbChangedBy";
             this.tbChangedBy.ReadOnly = true;
-            this.tbChangedBy.Size = new System.Drawing.Size(203, 20);
+            this.tbChangedBy.Size = new System.Drawing.Size(269, 22);
             this.tbChangedBy.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 68);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(3, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "ChangedBy:";
             // 
             // tbLocation
             // 
-            this.tbLocation.Location = new System.Drawing.Point(70, 89);
-            this.tbLocation.Margin = new System.Windows.Forms.Padding(2);
+            this.tbLocation.Location = new System.Drawing.Point(93, 110);
+            this.tbLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbLocation.Name = "tbLocation";
             this.tbLocation.ReadOnly = true;
-            this.tbLocation.Size = new System.Drawing.Size(203, 20);
+            this.tbLocation.Size = new System.Drawing.Size(269, 22);
             this.tbLocation.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 91);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(21, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(66, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Location:";
             // 
@@ -117,19 +109,19 @@
             // 
             this.cbDocType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDocType.FormattingEnabled = true;
-            this.cbDocType.Location = new System.Drawing.Point(70, 19);
-            this.cbDocType.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDocType.Location = new System.Drawing.Point(93, 23);
+            this.cbDocType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDocType.Name = "cbDocType";
-            this.cbDocType.Size = new System.Drawing.Size(203, 21);
+            this.cbDocType.Size = new System.Drawing.Size(269, 24);
             this.cbDocType.TabIndex = 8;
             // 
             // btnBrowseAsset
             // 
             this.btnBrowseAsset.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseAsset.Location = new System.Drawing.Point(276, 43);
-            this.btnBrowseAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBrowseAsset.Location = new System.Drawing.Point(368, 53);
+            this.btnBrowseAsset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowseAsset.Name = "btnBrowseAsset";
-            this.btnBrowseAsset.Size = new System.Drawing.Size(28, 19);
+            this.btnBrowseAsset.Size = new System.Drawing.Size(37, 23);
             this.btnBrowseAsset.TabIndex = 9;
             this.btnBrowseAsset.Text = "...";
             this.btnBrowseAsset.UseVisualStyleBackColor = true;
@@ -138,88 +130,44 @@
             // btnBrowseLocation
             // 
             this.btnBrowseLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseLocation.Location = new System.Drawing.Point(276, 89);
-            this.btnBrowseLocation.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBrowseLocation.Location = new System.Drawing.Point(368, 110);
+            this.btnBrowseLocation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBrowseLocation.Name = "btnBrowseLocation";
-            this.btnBrowseLocation.Size = new System.Drawing.Size(28, 19);
+            this.btnBrowseLocation.Size = new System.Drawing.Size(37, 23);
             this.btnBrowseLocation.TabIndex = 10;
             this.btnBrowseLocation.Text = "...";
             this.btnBrowseLocation.UseVisualStyleBackColor = true;
             this.btnBrowseLocation.Click += new System.EventHandler(this.btnBrowseLocation_Click);
             // 
-            // btnAddAsset
+            // btnNext
             // 
-            this.btnAddAsset.Location = new System.Drawing.Point(70, 206);
-            this.btnAddAsset.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddAsset.Name = "btnAddAsset";
-            this.btnAddAsset.Size = new System.Drawing.Size(77, 54);
-            this.btnAddAsset.TabIndex = 11;
-            this.btnAddAsset.Text = "Add Asset";
-            this.btnAddAsset.UseVisualStyleBackColor = true;
-            this.btnAddAsset.Click += new System.EventHandler(this.btnAddAsset_Click);
+            this.btnNext.Location = new System.Drawing.Point(93, 136);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(103, 66);
+            this.btnNext.TabIndex = 11;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnAddAsset_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(194, 206);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Location = new System.Drawing.Point(259, 136);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(77, 54);
+            this.btnCancel.Size = new System.Drawing.Size(103, 66);
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // lbMetaData
-            // 
-            this.lbMetaData.FormattingEnabled = true;
-            this.lbMetaData.Location = new System.Drawing.Point(70, 111);
-            this.lbMetaData.Margin = new System.Windows.Forms.Padding(2);
-            this.lbMetaData.Name = "lbMetaData";
-            this.lbMetaData.Size = new System.Drawing.Size(152, 82);
-            this.lbMetaData.TabIndex = 13;
-            // 
-            // btnAddMeta
-            // 
-            this.btnAddMeta.Location = new System.Drawing.Point(226, 111);
-            this.btnAddMeta.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddMeta.Name = "btnAddMeta";
-            this.btnAddMeta.Size = new System.Drawing.Size(46, 33);
-            this.btnAddMeta.TabIndex = 14;
-            this.btnAddMeta.Text = "Add";
-            this.btnAddMeta.UseVisualStyleBackColor = true;
-            // 
-            // btnRemoveMeta
-            // 
-            this.btnRemoveMeta.Location = new System.Drawing.Point(225, 159);
-            this.btnRemoveMeta.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRemoveMeta.Name = "btnRemoveMeta";
-            this.btnRemoveMeta.Size = new System.Drawing.Size(46, 33);
-            this.btnRemoveMeta.TabIndex = 15;
-            this.btnRemoveMeta.Text = "Delete";
-            this.btnRemoveMeta.UseVisualStyleBackColor = true;
-            this.btnRemoveMeta.Click += new System.EventHandler(this.btnRemoveMeta_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 111);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "MetaData";
-            // 
             // AddAssetForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 269);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnRemoveMeta);
-            this.Controls.Add(this.btnAddMeta);
-            this.Controls.Add(this.lbMetaData);
+            this.ClientSize = new System.Drawing.Size(416, 220);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAddAsset);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnBrowseLocation);
             this.Controls.Add(this.btnBrowseAsset);
             this.Controls.Add(this.cbDocType);
@@ -230,7 +178,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbAsset);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddAssetForm";
             this.Text = "AddAssetForm";
             this.Load += new System.EventHandler(this.AddAssetForm_Load);
@@ -251,11 +199,7 @@
         private System.Windows.Forms.ComboBox cbDocType;
         private System.Windows.Forms.Button btnBrowseAsset;
         private System.Windows.Forms.Button btnBrowseLocation;
-        private System.Windows.Forms.Button btnAddAsset;
+        private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.ListBox lbMetaData;
-        private System.Windows.Forms.Button btnAddMeta;
-        private System.Windows.Forms.Button btnRemoveMeta;
-        private System.Windows.Forms.Label label5;
     }
 }

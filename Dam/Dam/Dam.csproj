@@ -61,6 +61,12 @@
     <Compile Include="AddAssetForm.Designer.cs">
       <DependentUpon>AddAssetForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddFieldValueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFieldValueForm.Designer.cs">
+      <DependentUpon>AddFieldValueForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddFilterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddAssetForm.resx">
       <DependentUpon>AddAssetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFieldValueForm.resx">
+      <DependentUpon>AddFieldValueForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddFilterForm.resx">
       <DependentUpon>AddFilterForm.cs</DependentUpon>

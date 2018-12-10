@@ -34,14 +34,16 @@ namespace Dam
                         if (user.Position == "Admin")
                         {
                             AdminForm mainForm = new AdminForm();
-                            
+                            mainForm.LoggedInUser = user;
+
                             mainForm.Show();
                             this.Hide();
                         }
                         else
                         {
                             NormalForm mainForm = new NormalForm();
-                            
+                            mainForm.LoggedInUser = user;
+
                             mainForm.Show();
                             this.Hide();
                         }

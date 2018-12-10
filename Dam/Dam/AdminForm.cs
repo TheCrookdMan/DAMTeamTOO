@@ -18,6 +18,8 @@ namespace Dam
             InitializeComponent();
         }
 
+        public Admin LoggedInUser;
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
 
@@ -31,6 +33,7 @@ namespace Dam
         private void btnAddAsset_Click(object sender, EventArgs e)
         {
             AddAssetForm addAsset = new AddAssetForm();
+            addAsset.User = LoggedInUser;
             addAsset.ShowDialog();
         }
 

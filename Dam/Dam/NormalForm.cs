@@ -18,6 +18,7 @@ namespace Dam
             InitializeComponent();
         }
 
+        public Admin LoggedInUser;
 
         private void btnLogout_Click(object sender, EventArgs e)
         
