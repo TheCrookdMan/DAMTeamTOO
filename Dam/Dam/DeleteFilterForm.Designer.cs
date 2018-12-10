@@ -46,7 +46,7 @@
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(128, 57);
+            this.removeButton.Location = new System.Drawing.Point(81, 57);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(75, 23);
             this.removeButton.TabIndex = 13;
@@ -55,7 +55,7 @@
             // 
             // filterNameTB
             // 
-            this.filterNameTB.Location = new System.Drawing.Point(81, 6);
+            this.filterNameTB.Location = new System.Drawing.Point(81, 24);
             this.filterNameTB.Name = "filterNameTB";
             this.filterNameTB.Size = new System.Drawing.Size(203, 20);
             this.filterNameTB.TabIndex = 12;
@@ -63,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 11;

@@ -47,8 +47,6 @@ namespace Dam
             this.btnBackup = new System.Windows.Forms.Button();
             this.tbKeyword = new System.Windows.Forms.TextBox();
             this.LKeyword = new System.Windows.Forms.Label();
-            this.btnAddDoc = new System.Windows.Forms.Button();
-            this.btnRemoveDoc = new System.Windows.Forms.Button();
             this.GBFilters.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,18 +54,19 @@ namespace Dam
             // 
             this.LTitle.AutoSize = true;
             this.LTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTitle.Location = new System.Drawing.Point(117, 18);
+            this.LTitle.Location = new System.Drawing.Point(101, 15);
+            this.LTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LTitle.Name = "LTitle";
-            this.LTitle.Size = new System.Drawing.Size(496, 36);
+            this.LTitle.Size = new System.Drawing.Size(408, 29);
             this.LTitle.TabIndex = 0;
             this.LTitle.Text = "Digital Asset Management System";
             // 
             // btnEditLogin
             // 
-            this.btnEditLogin.Location = new System.Drawing.Point(16, 11);
-            this.btnEditLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditLogin.Location = new System.Drawing.Point(9, 10);
+            this.btnEditLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditLogin.Name = "btnEditLogin";
-            this.btnEditLogin.Size = new System.Drawing.Size(106, 57);
+            this.btnEditLogin.Size = new System.Drawing.Size(85, 46);
             this.btnEditLogin.TabIndex = 1;
             this.btnEditLogin.Text = "Edit Logins";
             this.btnEditLogin.UseVisualStyleBackColor = true;
@@ -75,10 +74,10 @@ namespace Dam
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(655, 12);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogout.Location = new System.Drawing.Point(513, 10);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(113, 57);
+            this.btnLogout.Size = new System.Drawing.Size(85, 46);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -87,11 +86,10 @@ namespace Dam
             // LBAssetViewer
             // 
             this.LBAssetViewer.FormattingEnabled = true;
-            this.LBAssetViewer.ItemHeight = 16;
-            this.LBAssetViewer.Location = new System.Drawing.Point(291, 92);
-            this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LBAssetViewer.Location = new System.Drawing.Point(239, 76);
+            this.LBAssetViewer.Margin = new System.Windows.Forms.Padding(2);
             this.LBAssetViewer.Name = "LBAssetViewer";
-            this.LBAssetViewer.Size = new System.Drawing.Size(477, 292);
+            this.LBAssetViewer.Size = new System.Drawing.Size(359, 238);
             this.LBAssetViewer.TabIndex = 3;
             // 
             // GBFilters
@@ -102,21 +100,20 @@ namespace Dam
             this.GBFilters.Controls.Add(this.filtersListBox);
             this.GBFilters.Controls.Add(this.label1);
             this.GBFilters.Controls.Add(this.btnSearch);
-            this.GBFilters.Location = new System.Drawing.Point(11, 185);
-            this.GBFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GBFilters.Location = new System.Drawing.Point(9, 116);
+            this.GBFilters.Margin = new System.Windows.Forms.Padding(2);
             this.GBFilters.Name = "GBFilters";
-            this.GBFilters.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GBFilters.Size = new System.Drawing.Size(255, 253);
+            this.GBFilters.Padding = new System.Windows.Forms.Padding(2);
+            this.GBFilters.Size = new System.Drawing.Size(191, 240);
             this.GBFilters.TabIndex = 4;
             this.GBFilters.TabStop = false;
             this.GBFilters.Text = "Filters";
             // 
             // deleteAF
             // 
-            this.deleteAF.Location = new System.Drawing.Point(142, 102);
-            this.deleteAF.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteAF.Location = new System.Drawing.Point(107, 108);
             this.deleteAF.Name = "deleteAF";
-            this.deleteAF.Size = new System.Drawing.Size(100, 28);
+            this.deleteAF.Size = new System.Drawing.Size(75, 23);
             this.deleteAF.TabIndex = 26;
             this.deleteAF.Text = "Delete";
             this.deleteAF.UseVisualStyleBackColor = true;
@@ -124,10 +121,9 @@ namespace Dam
             // 
             // addAF
             // 
-            this.addAF.Location = new System.Drawing.Point(7, 102);
-            this.addAF.Margin = new System.Windows.Forms.Padding(4);
+            this.addAF.Location = new System.Drawing.Point(6, 108);
             this.addAF.Name = "addAF";
-            this.addAF.Size = new System.Drawing.Size(100, 28);
+            this.addAF.Size = new System.Drawing.Size(75, 23);
             this.addAF.TabIndex = 25;
             this.addAF.Text = "Add";
             this.addAF.UseVisualStyleBackColor = true;
@@ -143,10 +139,9 @@ namespace Dam
             "Z-A (First Name)",
             "Z-A (Last Name)",
             "ID"});
-            this.sortByBox.Location = new System.Drawing.Point(7, 163);
-            this.sortByBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sortByBox.Location = new System.Drawing.Point(5, 171);
             this.sortByBox.Name = "sortByBox";
-            this.sortByBox.Size = new System.Drawing.Size(235, 24);
+            this.sortByBox.Size = new System.Drawing.Size(177, 21);
             this.sortByBox.TabIndex = 24;
             // 
             // filtersListBox
@@ -156,28 +151,28 @@ namespace Dam
             "Intake Form",
             "Birth Certificate",
             "Medical Form"});
-            this.filtersListBox.Location = new System.Drawing.Point(7, 22);
-            this.filtersListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.filtersListBox.Location = new System.Drawing.Point(5, 18);
             this.filtersListBox.Name = "filtersListBox";
-            this.filtersListBox.Size = new System.Drawing.Size(240, 72);
+            this.filtersListBox.Size = new System.Drawing.Size(181, 64);
             this.filtersListBox.TabIndex = 23;
             this.filtersListBox.SelectedIndexChanged += new System.EventHandler(this.filtersListBox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 144);
+            this.label1.Location = new System.Drawing.Point(4, 155);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 21;
-            this.label1.Text = "SortBy";
+            this.label1.Text = "Sort By:";
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(5, 197);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Location = new System.Drawing.Point(4, 198);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(237, 41);
+            this.btnSearch.Size = new System.Drawing.Size(178, 33);
             this.btnSearch.TabIndex = 14;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -185,10 +180,10 @@ namespace Dam
             // 
             // btnAddAsset
             // 
-            this.btnAddAsset.Location = new System.Drawing.Point(291, 391);
-            this.btnAddAsset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddAsset.Location = new System.Drawing.Point(239, 319);
+            this.btnAddAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddAsset.Name = "btnAddAsset";
-            this.btnAddAsset.Size = new System.Drawing.Size(115, 48);
+            this.btnAddAsset.Size = new System.Drawing.Size(86, 39);
             this.btnAddAsset.TabIndex = 5;
             this.btnAddAsset.Text = "Add Asset";
             this.btnAddAsset.UseVisualStyleBackColor = true;
@@ -196,10 +191,10 @@ namespace Dam
             // 
             // btnDeleteAsset
             // 
-            this.btnDeleteAsset.Location = new System.Drawing.Point(412, 391);
-            this.btnDeleteAsset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDeleteAsset.Location = new System.Drawing.Point(330, 319);
+            this.btnDeleteAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteAsset.Name = "btnDeleteAsset";
-            this.btnDeleteAsset.Size = new System.Drawing.Size(115, 48);
+            this.btnDeleteAsset.Size = new System.Drawing.Size(86, 39);
             this.btnDeleteAsset.TabIndex = 6;
             this.btnDeleteAsset.Text = "Delete Asset";
             this.btnDeleteAsset.UseVisualStyleBackColor = true;
@@ -207,10 +202,10 @@ namespace Dam
             // 
             // btnOptions
             // 
-            this.btnOptions.Location = new System.Drawing.Point(653, 390);
-            this.btnOptions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOptions.Location = new System.Drawing.Point(511, 319);
+            this.btnOptions.Margin = new System.Windows.Forms.Padding(2);
             this.btnOptions.Name = "btnOptions";
-            this.btnOptions.Size = new System.Drawing.Size(115, 48);
+            this.btnOptions.Size = new System.Drawing.Size(86, 39);
             this.btnOptions.TabIndex = 7;
             this.btnOptions.Text = "Log";
             this.btnOptions.UseVisualStyleBackColor = true;
@@ -218,10 +213,10 @@ namespace Dam
             // 
             // btnBackup
             // 
-            this.btnBackup.Location = new System.Drawing.Point(533, 391);
-            this.btnBackup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBackup.Location = new System.Drawing.Point(421, 319);
+            this.btnBackup.Margin = new System.Windows.Forms.Padding(2);
             this.btnBackup.Name = "btnBackup";
-            this.btnBackup.Size = new System.Drawing.Size(115, 48);
+            this.btnBackup.Size = new System.Drawing.Size(86, 39);
             this.btnBackup.TabIndex = 8;
             this.btnBackup.Text = "Backup";
             this.btnBackup.UseVisualStyleBackColor = true;
@@ -229,49 +224,28 @@ namespace Dam
             // 
             // tbKeyword
             // 
-            this.tbKeyword.Location = new System.Drawing.Point(84, 155);
-            this.tbKeyword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbKeyword.Location = new System.Drawing.Point(64, 75);
+            this.tbKeyword.Margin = new System.Windows.Forms.Padding(2);
             this.tbKeyword.Multiline = true;
             this.tbKeyword.Name = "tbKeyword";
-            this.tbKeyword.Size = new System.Drawing.Size(183, 22);
+            this.tbKeyword.Size = new System.Drawing.Size(138, 19);
             this.tbKeyword.TabIndex = 17;
             // 
             // LKeyword
             // 
             this.LKeyword.AutoSize = true;
-            this.LKeyword.Location = new System.Drawing.Point(8, 155);
+            this.LKeyword.Location = new System.Drawing.Point(8, 77);
+            this.LKeyword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LKeyword.Name = "LKeyword";
-            this.LKeyword.Size = new System.Drawing.Size(70, 17);
+            this.LKeyword.Size = new System.Drawing.Size(54, 13);
             this.LKeyword.TabIndex = 16;
             this.LKeyword.Text = "Keyword :";
             // 
-            // btnAddDoc
-            // 
-            this.btnAddDoc.Location = new System.Drawing.Point(17, 92);
-            this.btnAddDoc.Name = "btnAddDoc";
-            this.btnAddDoc.Size = new System.Drawing.Size(106, 46);
-            this.btnAddDoc.TabIndex = 18;
-            this.btnAddDoc.Text = "Add Document Type";
-            this.btnAddDoc.UseVisualStyleBackColor = true;
-            this.btnAddDoc.Click += new System.EventHandler(this.btnAddDoc_Click);
-            // 
-            // btnRemoveDoc
-            // 
-            this.btnRemoveDoc.Location = new System.Drawing.Point(160, 92);
-            this.btnRemoveDoc.Name = "btnRemoveDoc";
-            this.btnRemoveDoc.Size = new System.Drawing.Size(106, 46);
-            this.btnRemoveDoc.TabIndex = 19;
-            this.btnRemoveDoc.Text = "Remove Document Type";
-            this.btnRemoveDoc.UseVisualStyleBackColor = true;
-            this.btnRemoveDoc.Click += new System.EventHandler(this.btnRemoveDoc_Click);
-            // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRemoveDoc);
-            this.Controls.Add(this.btnAddDoc);
+            this.ClientSize = new System.Drawing.Size(612, 366);
             this.Controls.Add(this.tbKeyword);
             this.Controls.Add(this.LKeyword);
             this.Controls.Add(this.btnBackup);
@@ -283,7 +257,7 @@ namespace Dam
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnEditLogin);
             this.Controls.Add(this.LTitle);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminForm";
             this.Text = "AdminForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminForm_FormClosing);
@@ -314,7 +288,5 @@ namespace Dam
         private System.Windows.Forms.Button deleteAF;
         private System.Windows.Forms.Button addAF;
         public System.Windows.Forms.CheckedListBox filtersListBox;
-        private System.Windows.Forms.Button btnAddDoc;
-        private System.Windows.Forms.Button btnRemoveDoc;
     }
 }

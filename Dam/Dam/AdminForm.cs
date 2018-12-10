@@ -53,20 +53,8 @@ namespace Dam
         {
             if (LBAssetViewer.SelectedItem != null)
             {
-                if (LBAssetViewer.Items.Count >= 1)
-                {
-                    if (LBAssetViewer.SelectedValue != null)
-                    {
-                        string SAsset = LBAssetViewer.SelectedItem.ToString();
-                        LBAssetViewer.Items.Remove(SAsset);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Cannot remove");
-                }
+                LBAssetViewer.Items.Remove(LBAssetViewer.SelectedItem);
             }
-           
         }
 
         private void btnBackup_Click(object sender, EventArgs e)
@@ -79,7 +67,7 @@ namespace Dam
                 List<Metadata> bMetadatas = db.Metadatas.ToList();
                 List<Admin> bAdmins = db.Admins.ToList();
 
-                string backupPath = "\\\\DESKTOP-MK7928K\\TeamToo\\Backups\\Manual\\";
+                string backupPath = @"\\25.16.124.220\TeamToo\Backups\Manual\";
                 string path = backupPath + DateTime.Now.Year.ToString() + "-" + DateTime.Now.ToString("ddhhmmss") + ".txt";
                 File.Create(path).Close();
                 TextWriter tw = new StreamWriter(path, true);

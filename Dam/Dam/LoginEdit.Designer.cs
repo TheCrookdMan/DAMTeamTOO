@@ -62,6 +62,7 @@
             this.editAdd.TabIndex = 3;
             this.editAdd.Text = "Add";
             this.editAdd.UseVisualStyleBackColor = true;
+            this.editAdd.Click += new System.EventHandler(this.editAdd_Click);
             // 
             // editDelete
             // 

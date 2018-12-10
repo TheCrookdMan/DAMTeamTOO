@@ -39,7 +39,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 9);
+            this.label1.Location = new System.Drawing.Point(11, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 0;
@@ -47,14 +47,14 @@
             // 
             // filterNameTB
             // 
-            this.filterNameTB.Location = new System.Drawing.Point(81, 6);
+            this.filterNameTB.Location = new System.Drawing.Point(81, 10);
             this.filterNameTB.Name = "filterNameTB";
             this.filterNameTB.Size = new System.Drawing.Size(203, 20);
             this.filterNameTB.TabIndex = 2;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(128, 68);
+            this.addButton.Location = new System.Drawing.Point(81, 69);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 4;
@@ -64,7 +64,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(209, 68);
+            this.cancelButton.Location = new System.Drawing.Point(210, 69);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 5;
@@ -76,7 +76,7 @@
             // 
             this.cbDocType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDocType.FormattingEnabled = true;
-            this.cbDocType.Location = new System.Drawing.Point(81, 31);
+            this.cbDocType.Location = new System.Drawing.Point(81, 39);
             this.cbDocType.Margin = new System.Windows.Forms.Padding(2);
             this.cbDocType.Name = "cbDocType";
             this.cbDocType.Size = new System.Drawing.Size(203, 21);
@@ -85,12 +85,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 34);
+            this.label2.Location = new System.Drawing.Point(16, 42);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "DocType:";
+            this.label2.Text = "Doc Type:";
             // 
             // AddFilterForm
             // 
