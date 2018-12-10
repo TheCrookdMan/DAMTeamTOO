@@ -157,9 +157,18 @@ namespace Dam
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            LBAssetViewer.Items.Clear();
             using (DB _context = new DB())
             {
-                var Search = _context.Assets.Include("DocID").ToList();
+                var Search = _context.Assets.Include("DocID").Include("meta").ToList();
+                Search = Search.Where(A => A.meta.Where(M => M.FieldValue.ToLower().Contains(tbKeyword.Text.ToLower())).Count() >= 1 ).ToList();
+                foreach (var item in Search)
+                {
+                    LBAssetViewer.Items.Add(item);
+                }
+                  
+
+
             }
         }
 

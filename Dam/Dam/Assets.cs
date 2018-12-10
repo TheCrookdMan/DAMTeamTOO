@@ -14,5 +14,27 @@ namespace Dam
         public DateTime CapturedDate { get; set; }
         public Documents DocID { get; set; }
         public List<Metadata> meta { get; set; }
+
+        public override string ToString()
+        {
+            return $"{ID}: {Location.Split('\\').Last()} {spacecount(Location.Split('/').Last())} [{DocID.Asset}]";
+        }
+
+        private object spacecount(string v)
+        {
+            try
+            {
+                string Return = "                         ";
+                foreach (var item in v)
+                {
+                    Return.Substring(1);
+                }
+                return Return;
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
     }
 }
