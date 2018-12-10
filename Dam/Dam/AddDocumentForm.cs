@@ -17,7 +17,7 @@ namespace Dam
             InitializeComponent();
         }
 
-        private DB db;
+        private DB db = new DB();
         private int i;
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -45,13 +45,22 @@ namespace Dam
                 if (fieldMappingForm.FieldName != null)
                 {
                     field.Field = fieldMappingForm.FieldName;
-                   fields.Add(field);
+                    field.doc = Document;
+                    fields.Add(field);
                 }
                 i++;
             }
+            foreach (Field_Mappings field in fields)
+            {
+                db.Field_Mappings.Add(field);
+            }
 
             Document.Fields = fields;
+            db.Documents.Add(Document);
 
+            db.SaveChanges();
+
+            Close();
         }
     }
 }
