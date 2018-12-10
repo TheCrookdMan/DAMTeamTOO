@@ -175,5 +175,17 @@ namespace Dam
             AddDocumentForm AddDocument = new AddDocumentForm();
             AddDocument.ShowDialog();
         }
+
+        private void btnAddDocument_Click(object sender, EventArgs e)
+        {
+            AddDocumentForm AddDoc = new AddDocumentForm();
+            AddDoc.ShowDialog();
+        }
+
+        private void btnRemoveDocument_Click(object sender, EventArgs e)
+        {
+            RemoveDocumentForm RemoveDoc = new RemoveDocumentForm();
+            RemoveDoc.ShowDialog();
+        }
     }
 }
